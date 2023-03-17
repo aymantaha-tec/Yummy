@@ -1,0 +1,75 @@
+
+:root {
+  --mainColor: #0D0D0D;
+  --secandaryColore: #FFF;
+  --tagColore: #CFF4FC;
+}
+body {
+  background-color: var(--mainColor);
+}
+aside {
+  background-color: var(--mainColor);
+  width: 325px;
+  height: 100vh;
+  color: var(--tagColore);
+  transform: translateX(-275px);
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: var(--secandaryColore);
+}
+.menu {
+  background-color: var(--secandaryColore);
+  width: 60px;
+  color: var(--mainColor);
+}
+.menu img {
+  width: 50px;
+}
+.close {
+  color: var(--mainColor);
+}
+.menu  a {
+  color: var(--mainColor);
+}
+.social a{
+  margin-left: 10px;
+  color: var(--secandaryColore);
+}
+.social,
+.social + p {
+  margin-left: 22px;
+  color: var(--secandaryColore);
+}
+section {
+  position: absolute;
+  top: 0;
+}
+
+
+#meals{
+  overflow-y: auto;
+  height: 100vh;
+}
+.card-catgegory {
+overflow: hidden;
+
+}
+figcaption {
+  background-color: #ffffffb3;
+  transform: translateY(110%);
+  transition: all 0.75s;
+}
+.card-catgegory:hover figcaption {
+  transform: translateY(0%);
+}
+
+.card-meal {
+  color: var(--secandaryColore);
+}
+.item {
+  cursor: pointer;
+}
