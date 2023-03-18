@@ -6,6 +6,7 @@
 }
 body {
   background-color: var(--mainColor);
+  overflow: hidden;
 }
 aside {
   background-color: var(--mainColor);
@@ -14,10 +15,10 @@ aside {
   color: var(--tagColore);
   transform: translateX(-275px);
 }
-li {
+aside li {
   list-style: none;
 }
-li a {
+aside li a {
   text-decoration: none;
   color: var(--secandaryColore);
 }
@@ -49,7 +50,6 @@ section {
   top: 0;
 }
 
-
 #meals{
   overflow-y: auto;
   height: 100vh;
@@ -60,7 +60,7 @@ overflow: hidden;
 }
 figcaption {
   background-color: #ffffffb3;
-  transform: translateY(110%);
+  transform: translateY(115%);
   transition: all 0.75s;
 }
 .card-catgegory:hover figcaption {
@@ -73,3 +73,32 @@ figcaption {
 .item {
   cursor: pointer;
 }
+
+/*  */
+.text-meals {
+  color: var(--secandaryColore);
+}
+.text-meals h3 {
+  font-size: 35px;
+}
+
+.text-meals .detalis {
+  font-size: 20px;
+  font-weight: bold;
+}
+input{
+background-color: var(--mainColor) !important;
+color: var(--secandaryColore) !important;
+}
+input::placeholder {
+  color: #e6e1e1a0 !important;
+}
+.loadingScreen {
+  display: flex;
+  z-index: 999999999999999999999999;
+  background-color: var(--mainColor);
+}
+
+
+
+
